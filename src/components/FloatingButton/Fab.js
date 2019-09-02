@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from '../../../node_modules/react';
 import Pubsub from '../../utilities/pubsub';
 import "./Fab.css"
-import M from "materialize-css";
-import Auth, { user } from '../../utilities/authorizer';
+//* import M from "materialize-css";
+//* import Auth, { user } from '../../utilities/authorizer';
 
 function FloatingActionButton() {
 
@@ -20,9 +20,9 @@ function FloatingActionButton() {
         });
     }, []);
 
-    const handleSignInSignOut = () => {
+    //* const handleSignInSignOut = () => {
         
-    }
+    //* }
 
     const handleSignout = () => {
         setAuthenticated(false);
@@ -40,7 +40,8 @@ function FloatingActionButton() {
     const renderFAB = () => {
         // if(!authenticated) {
         //     return null
-        // } else 
+        // } else
+        if(authenticated){ 
         if (challengeType === ('') ){
 
             return (
@@ -57,6 +58,7 @@ function FloatingActionButton() {
             </div>
             )
         }
+    }
     }
 
     return (

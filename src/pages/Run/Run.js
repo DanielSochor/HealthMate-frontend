@@ -1,6 +1,6 @@
 import React from 'react';
 // import WhatLength from "../../components/WhatLength/WhatLength";
-import Navbar from "../../components/Navbar/Navbar";
+//* import Navbar from "../../components/Navbar/Navbar";
 import API from "../../utilities/API";
 import "./Run.css"
 import M from "materialize-css";

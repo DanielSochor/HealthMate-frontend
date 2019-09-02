@@ -22,9 +22,9 @@ class FloatingActionButton extends Component {
     render() {
         return (
             <div className="fixed-action-btn">
-                <a className="btn-floating btn-large red">
+                <button className="btn-floating btn-large red">
                     <i className="fab large material-icons" tabIndex="1">add</i>
-                </a>
+                </button>
                 <ul>
                     <li><a className="btn-floating green" value="run" href="/pickrunchallenge"><i className="material-icons">directions_run</i></a></li>
                     <li><a className="btn-floating yellow darken-1" value="bike" href="/pickbikechallenge"><i className="material-icons">directions_bike</i></a></li>
@@ -36,8 +36,6 @@ class FloatingActionButton extends Component {
     }
 
 }
-
-
 
 
 export default FloatingActionButton;

@@ -37,10 +37,10 @@ class Navbar extends Component {
                             </div>
                             <i className="account_pic material-icons">account_circle</i>
                             <br />
-                            <a href="#!" style={{ color: "white", fontWeight: "bold" }}>Settings</a>
+                            <button style={{ color: "white", fontWeight: "bold" }}>Settings</button>
                         </div>
                     </li>
-                    <div className="col s12" id="logoutBtn"><li><a className="logoutBtn waves-effect waves-light btn-large sidenav-close" onClick={this.handleSignOut}>Logout</a></li></div>
+                    <div className="col s12" id="logoutBtn"><li><button className="logoutBtn waves-effect waves-light btn-large sidenav-close" onClick={this.handleSignOut}>Logout</button></li></div>
 
                 </ul>
             </div>

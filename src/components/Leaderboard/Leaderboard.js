@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./Leaderboard.css"
 import API from "../../utilities/API.js"
-import moment from "moment";
-import Auth, { user } from '../../utilities/authorizer';
+//* import moment from "moment";
+//* import Auth, { user } from '../../utilities/authorizer';
 
 class Leaderboard extends Component {
 

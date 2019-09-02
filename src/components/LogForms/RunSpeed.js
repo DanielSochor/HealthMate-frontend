@@ -86,7 +86,7 @@ class RunSpeedLog extends React.Component {
                             />
                         </div>
                         <div>
-                            <a class="waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</a>
+                            <button class="waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</button>
                         </div>
                     </form>
                 </div>
@@ -95,7 +95,7 @@ class RunSpeedLog extends React.Component {
                         <div>
                             <h5>Great job!</h5>
                             <div>
-                                <a className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</a>
+                                <button className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</button>
                             </div>
                         </div>
                     </form>

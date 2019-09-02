@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-import FloatingActionButton from "../FloatingButton/FabOLD";
+//* import React, { Component } from 'react';
+import React from 'react';
+//* import FloatingActionButton from "../FloatingButton/FabOLD";
 import "./ChallengePage.css"
 import MessageBoard from "../MessageBoard/MessageBoard";
 import Leaderboard from "../Leaderboard/Leaderboard";
-import UserData from "../UserData/UserData"
-import Auth, { user } from '../../utilities/authorizer';
+import UserData from "../UserData/UserData";
+//* import Auth, { user } from '../../utilities/authorizer';
+import { user } from '../../utilities/authorizer';
 
 
 function ChallengePage() {
@@ -53,7 +55,6 @@ function ChallengePage() {
                </div>
             </div>
         );
-    
 }
 
 export default ChallengePage;

@@ -47,7 +47,8 @@ class BikeDistanceLog extends React.Component {
         this.setState({
             shown: !this.state.shown
         });
-        let { user_id, group_challenge_id, biking_distance } = this.state;
+        //* let { user_id, group_challenge_id, biking_distance } = this.state;
+        let { group_challenge_id, biking_distance } = this.state;
         let newBikingLog = {
             user_id: this.props.user_id,
             group_challenge_id: group_challenge_id,
@@ -85,7 +86,7 @@ class BikeDistanceLog extends React.Component {
                             />
                         </div>
                         <div>
-                            <a class="waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</a>
+                            <button class="waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</button>
                         </div>
                     </form>
                 </div>
@@ -94,7 +95,7 @@ class BikeDistanceLog extends React.Component {
                         <div>
                             <h5>Great job!</h5>
                             <div>
-                                <a className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</a>
+                                <button className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</button>
                             </div>
                         </div>
                     </form>

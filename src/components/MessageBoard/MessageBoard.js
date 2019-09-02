@@ -3,14 +3,13 @@ import MessageItem from "../MessageItem/MessageItem"
 import "./MessageBoard.css"
 import API from "../../utilities/API.js"
 import M from "materialize-css";
-import Auth, { user } from '../../utilities/authorizer'
+//import Auth, { user } from '../../utilities/authorizer'
 
 
 class MessageBoard extends Component {
     componentDidMount(){
         M.AutoInit()
     }
-
 
     constructor(props) {
         super(props)
@@ -36,7 +35,7 @@ class MessageBoard extends Component {
 
 
     handleClick = (index) => {
-        if (this.state.showItemIndex == index) {
+        if (this.state.showItemIndex === index) {
             this.setState({ showItemIndex: null });
         } else {
             this.setState({ showItemIndex: index });
@@ -59,7 +58,7 @@ class MessageBoard extends Component {
             message_body: message_body,
             user_id: user_id,
             group_challenge_id: challenge_id,
-            user_id: this.props.user_id
+            //user_id: this.props.user_id
 
         }
         API.sendMessage(newMessageObj)
@@ -84,7 +83,7 @@ class MessageBoard extends Component {
         let messages = this.state.messages.map(messages => (
             <MessageItem
                 handleClick={this.handleClick}
-                showMe={this.state.showItemIndex == messages.id}
+                showMe={this.state.showItemIndex === messages.id}
                 key={messages.id}
                 index={messages.id}
                 username={messages.username}
@@ -107,7 +106,7 @@ class MessageBoard extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <a className="waves-effect waves-light btn-small" id="message_button" onClick={this.messageSubmit}>Send</a>
+                            <button className="waves-effect waves-light btn-small" id="message_button" onClick={this.messageSubmit}>Send</button>
                         </div>
                     </form>
                 </div>

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import "./UserData.css"
 import RunDistanceLog from "../LogForms/RunDistance"
 import BikeDistanceLog from "../LogForms/BikeDistance"
-import moment from "moment"
-import API from "../../utilities/API.js"
+//* import moment from "moment"
+//* import API from "../../utilities/API.js"
 import RunSpeedLog from '../LogForms/RunSpeed';
 import BikeSpeedLog from "../LogForms/BikeSpeed";
 import ChallengePage from "../ChallengePage/ChallengePage"

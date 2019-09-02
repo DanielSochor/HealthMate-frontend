@@ -1,6 +1,6 @@
 import React from 'react';
 import API from "../../utilities/API.js";
-import moment from "moment";
+//* import moment from "moment";
 
 class RunDistanceLog extends React.Component {
 
@@ -45,7 +45,8 @@ class RunDistanceLog extends React.Component {
         this.setState({
             shown: !this.state.shown
         });
-        let { user_id, group_challenge_id, running_distance } = this.state;
+        //let { user_id, group_challenge_id, running_distance } = this.state;
+        let { group_challenge_id, running_distance } = this.state;
         let newRunningLog = {
             user_id: this.props.user_id,
             group_challenge_id: group_challenge_id,
@@ -83,7 +84,7 @@ class RunDistanceLog extends React.Component {
                             />
                         </div>
                         <div>
-                            <a className="submitRunLog waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</a>
+                            <button className="submitRunLog waves-effect waves-light btn" onClick={this.messageSubmit}>Submit</button>
                         </div>
                     </form>
                 </div>
@@ -92,7 +93,7 @@ class RunDistanceLog extends React.Component {
                         <div>
                             <h5>Great job!</h5>
                             <div>
-                                <a className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</a>
+                                <button className="waves-effect waves-light btn" onClick={this.toggle.bind(this)}>Add new log</button>
                             </div>
                         </div>
                     </form>
