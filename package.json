@@ -16,8 +16,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "startt": "react-scripts start",
-    "start": "node server.js",
+    "start": "react-scripts start",
+    "startt": "node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
