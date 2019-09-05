@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "REACT_APP_PUBLIC_URL",
+  "proxy": "process.env.REACT_APP_PUBLIC_URL",
   "eslintConfig": {
     "extends": "react-app"
   },
