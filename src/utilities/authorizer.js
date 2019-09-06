@@ -4,7 +4,7 @@ import Pubsub from './pubsub';
 import { deepCopyObj } from './helper';
 import Data from './data';
 
-const baseUrl = process.env.REACT_APP_BASE_URL || '/'
+const baseUrl = process.env.REACT_APP_SERVER_URL|| '/'
 var Auth = {};
 
 var user = {};
