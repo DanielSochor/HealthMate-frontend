@@ -12,25 +12,26 @@ var user = {};
 (function (obj) {
 
   obj.checkForExistingSession = () => {
-    let session_token = localStorage.getItem('x-session-token');
-    if (session_token) {
-      axios.get(baseUrl+ '/api/user', { headers: { 'x-session-token': session_token } }).then(response => {
-        console.log(response);
-        if (validateUserData(response.data)) {
-          user = deepCopyObj(response.data);
-          console.log(user);
-          console.log('user is validated');
-          if (user === {}){
-            console.log('no existing session');
-          } else {
-            console.log('existing session');
-          }
-        }
-        Pubsub.publish('login', null);
-      }).catch(error => {
-        console.log(error);
-      });
-    }
+    //let session_token = localStorage.getItem('x-session-token');
+    //if (session_token) {
+      //axios.get(baseUrl+ '/api/user', { headers: { 'x-session-token': session_token } }).then(response => {
+        //console.log(response);
+        //if (validateUserData(response.data)) {
+          //user = deepCopyObj(response.data);
+          //console.log(user);
+          //console.log('user is validated');
+          //if (user === {}){
+            //console.log('no existing session');
+          //} else {
+            //console.log('existing session');
+          //}
+        //}
+        //Pubsub.publish('login', null);
+      //}).catch(error => {
+        //console.log(error);
+      //});
+    //}
+    console.log('session token check');
   }
 
   obj.sendSigninRequest = (params) => {
