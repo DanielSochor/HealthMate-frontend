@@ -14,7 +14,7 @@ var user = {};
   obj.checkForExistingSession = () => {
     let session_token = localStorage.getItem('x-session-token');
     if (session_token) {
-      axios.get(baseUrl+ '/api/user', { headers: { 'x-session-token': session_token } }).then(response => {
+      axios.get(baseUrl+ 'api/user', { headers: { 'x-session-token': session_token } }).then(response => {
         console.log(response);
         if (validateUserData(response.data)) {
           user = deepCopyObj(response.data);
