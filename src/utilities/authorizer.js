@@ -31,7 +31,7 @@ var user = {};
         console.log(error);
       });
     }
-    //console.log('session token check');
+    console.log('session token check');
   }
 
   obj.sendSigninRequest = (params) => {
