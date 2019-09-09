@@ -17,9 +17,6 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "starttt": "react-scripts start",
-    "startt": "node server.js",
-    "startttt": "run build:production",
     "build:production": "env-cmd -f .env.production npm run build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
